@@ -23,7 +23,7 @@ Pod::Spec.new do |spec|
   spec.source_files  = "AsgaSocialSDK"
   spec.exclude_files = "Classes/Exclude"
   
-  spec.dependency "GoogleSignInt"
+  spec.dependency "GoogleSignIn"
   spec.dependency "FBSDKLoginKit"
   spec.dependency "Swifter"
 end

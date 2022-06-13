@@ -32,6 +32,20 @@ socialAuthHelper.launchFacebookLogin()
 socialAuthHelper.launchTwitterLogin()
                                
 ```      
+# Configurations
+
+```swift
+// in AppDelegate.swift file 
+
+// in case login with Google, set the googleClientID
+SocialGoogleAuthCredential.shared.googleClientID = "googleClientID"
+
+// in case login with Twitter, set this configurations
+SocialTwitterAuthCredential.shared.twitterConsumerSecret = "twitterConsumerSecret"
+SocialTwitterAuthCredential.shared.twitterAuthCallBackUrl = "twitterAuthCallBackUrl"
+SocialTwitterAuthCredential.shared.twitterConsumerKey = "twitterConsumerKey"
+
+```      
 
 ## Author
 * [Ibrahim Ali](https://github.com/IbrahimAli2017)

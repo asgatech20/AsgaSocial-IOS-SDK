@@ -15,9 +15,9 @@ Pod::Spec.new do |spec|
 
   spec.author       = { "Zeynab" => "zinab.ahmed@asgatech.com" }
 
-  spec.ios.deployment_target = "13.0"
+  spec.ios.deployment_target = "11.0"
 
-  spec.source       = { :git => "https://github.com/asgatech20/AsgaSocial-IOS-SDK.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/asgatech20/AsgaSocial-IOS-SDK.git", :tag => "0.0.2" }
 
   spec.source_files  = "AsgaSocialSDK/**/*.{h,m,swift}"
   spec.exclude_files = "Classes/Exclude"

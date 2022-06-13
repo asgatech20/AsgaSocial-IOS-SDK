@@ -1,5 +1,7 @@
 # AsgaSocialSDK
-     AsgaSocialSDK is an iOS Library which used to facilitate the login with different social ways in your app, until now you can login with apple, google, facebook and twitter.
+     AsgaSocialSDK is an iOS Library which used to facilitate the login 
+     with different social ways in your app, until now you can login with
+     apple, google, facebook and twitter.
 
 ## Installation
 
@@ -14,7 +16,7 @@ pod "AsgaSocialSDK"
 
 ```swift
 var socialAuthHelper = SocialHelper.init(viewController: self,
-                                        Permissions: [.publicProfile,
+                                         Permissions: [.publicProfile,
                                                       .email])
 
 // to implement login with Apple

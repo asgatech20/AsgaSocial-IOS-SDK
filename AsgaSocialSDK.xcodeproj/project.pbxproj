@@ -7,10 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A14509D1F3E0495EF2004073 /* Pods_AsgaSocialSDK_AsgaSocialSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5EC015B3FB7BE47B2B544B0 /* Pods_AsgaSocialSDK_AsgaSocialSDKTests.framework */; };
+		A17392B9931AEF0C5D3123FF /* Pods_AsgaSocialSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B42DDBBEF0B3DD57B8BA7B77 /* Pods_AsgaSocialSDK.framework */; };
 		F0801DF1284E4CEA00B16A69 /* AsgaSocialSDK.docc in Sources */ = {isa = PBXBuildFile; fileRef = F0801DF0284E4CEA00B16A69 /* AsgaSocialSDK.docc */; };
 		F0801DF7284E4CEA00B16A69 /* AsgaSocialSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0801DEC284E4CEA00B16A69 /* AsgaSocialSDK.framework */; };
 		F0801DFC284E4CEA00B16A69 /* AsgaSocialSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0801DFB284E4CEA00B16A69 /* AsgaSocialSDKTests.swift */; };
 		F0801DFD284E4CEA00B16A69 /* AsgaSocialSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = F0801DEF284E4CEA00B16A69 /* AsgaSocialSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0801E17284E4DEB00B16A69 /* ProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0801E09284E4DEA00B16A69 /* ProviderType.swift */; };
+		F0801E18284E4DEB00B16A69 /* SocialPermissonsType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0801E0A284E4DEA00B16A69 /* SocialPermissonsType.swift */; };
+		F0801E19284E4DEB00B16A69 /* SocialUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0801E0B284E4DEA00B16A69 /* SocialUserModel.swift */; };
+		F0801E1A284E4DEB00B16A69 /* SocialGoogleAuthCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0801E0D284E4DEA00B16A69 /* SocialGoogleAuthCredential.swift */; };
+		F0801E1B284E4DEB00B16A69 /* SocialTwitterAuthCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0801E0E284E4DEA00B16A69 /* SocialTwitterAuthCredential.swift */; };
+		F0801E1C284E4DEB00B16A69 /* TwitterAuthHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0801E10284E4DEA00B16A69 /* TwitterAuthHelper.swift */; };
+		F0801E1D284E4DEB00B16A69 /* FacebookAuthHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0801E11284E4DEA00B16A69 /* FacebookAuthHelper.swift */; };
+		F0801E1E284E4DEB00B16A69 /* SocialHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0801E12284E4DEA00B16A69 /* SocialHelper.swift */; };
+		F0801E1F284E4DEB00B16A69 /* GoogleAuthHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0801E13284E4DEA00B16A69 /* GoogleAuthHelper.swift */; };
+		F0801E20284E4DEB00B16A69 /* SocialAuthHelperProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0801E14284E4DEA00B16A69 /* SocialAuthHelperProtocols.swift */; };
+		F0801E21284E4DEB00B16A69 /* AppleAuthHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0801E15284E4DEA00B16A69 /* AppleAuthHelper.swift */; };
+		F0B1D055284F4DA400100E04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1D054284F4DA400100E04 /* AppDelegate.swift */; };
+		F0B1D057284F4DA400100E04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1D056284F4DA400100E04 /* SceneDelegate.swift */; };
+		F0B1D059284F4DA400100E04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1D058284F4DA400100E04 /* ViewController.swift */; };
+		F0B1D05C284F4DA400100E04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0B1D05A284F4DA400100E04 /* Main.storyboard */; };
+		F0B1D05E284F4DA700100E04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0B1D05D284F4DA700100E04 /* Assets.xcassets */; };
+		F0B1D061284F4DA700100E04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0B1D05F284F4DA700100E04 /* LaunchScreen.storyboard */; };
+		F0B1D06C284F4DA700100E04 /* AsgaSocialSDKExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1D06B284F4DA700100E04 /* AsgaSocialSDKExampleTests.swift */; };
+		F0B1D076284F4DA700100E04 /* AsgaSocialSDKExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1D075284F4DA700100E04 /* AsgaSocialSDKExampleUITests.swift */; };
+		F0B1D078284F4DA700100E04 /* AsgaSocialSDKExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1D077284F4DA700100E04 /* AsgaSocialSDKExampleUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -21,14 +43,58 @@
 			remoteGlobalIDString = F0801DEB284E4CEA00B16A69;
 			remoteInfo = AsgaSocialSDK;
 		};
+		F0B1D068284F4DA700100E04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0801DE3284E4CEA00B16A69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0B1D051284F4DA400100E04;
+			remoteInfo = AsgaSocialSDKExample;
+		};
+		F0B1D072284F4DA700100E04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0801DE3284E4CEA00B16A69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0B1D051284F4DA400100E04;
+			remoteInfo = AsgaSocialSDKExample;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		581C7BAC05590DF7ED93EDDD /* Pods-AsgaSocialSDK-AsgaSocialSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsgaSocialSDK-AsgaSocialSDKTests.debug.xcconfig"; path = "Target Support Files/Pods-AsgaSocialSDK-AsgaSocialSDKTests/Pods-AsgaSocialSDK-AsgaSocialSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
+		822A8A00AC5D54AE0EE76D09 /* Pods-AsgaSocialSDK-AsgaSocialSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsgaSocialSDK-AsgaSocialSDKTests.release.xcconfig"; path = "Target Support Files/Pods-AsgaSocialSDK-AsgaSocialSDKTests/Pods-AsgaSocialSDK-AsgaSocialSDKTests.release.xcconfig"; sourceTree = "<group>"; };
+		96A821850C2A8C6975899DA0 /* Pods-AsgaSocialSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsgaSocialSDK.release.xcconfig"; path = "Target Support Files/Pods-AsgaSocialSDK/Pods-AsgaSocialSDK.release.xcconfig"; sourceTree = "<group>"; };
+		B42DDBBEF0B3DD57B8BA7B77 /* Pods_AsgaSocialSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AsgaSocialSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3F502BF5970E9DE194B0A22 /* Pods-AsgaSocialSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsgaSocialSDK.debug.xcconfig"; path = "Target Support Files/Pods-AsgaSocialSDK/Pods-AsgaSocialSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		D5EC015B3FB7BE47B2B544B0 /* Pods_AsgaSocialSDK_AsgaSocialSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AsgaSocialSDK_AsgaSocialSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0801DEC284E4CEA00B16A69 /* AsgaSocialSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AsgaSocialSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0801DEF284E4CEA00B16A69 /* AsgaSocialSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsgaSocialSDK.h; sourceTree = "<group>"; };
 		F0801DF0284E4CEA00B16A69 /* AsgaSocialSDK.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = AsgaSocialSDK.docc; sourceTree = "<group>"; };
 		F0801DF6284E4CEA00B16A69 /* AsgaSocialSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsgaSocialSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0801DFB284E4CEA00B16A69 /* AsgaSocialSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsgaSocialSDKTests.swift; sourceTree = "<group>"; };
+		F0801E09284E4DEA00B16A69 /* ProviderType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderType.swift; sourceTree = "<group>"; };
+		F0801E0A284E4DEA00B16A69 /* SocialPermissonsType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialPermissonsType.swift; sourceTree = "<group>"; };
+		F0801E0B284E4DEA00B16A69 /* SocialUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialUserModel.swift; sourceTree = "<group>"; };
+		F0801E0D284E4DEA00B16A69 /* SocialGoogleAuthCredential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialGoogleAuthCredential.swift; sourceTree = "<group>"; };
+		F0801E0E284E4DEA00B16A69 /* SocialTwitterAuthCredential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialTwitterAuthCredential.swift; sourceTree = "<group>"; };
+		F0801E10284E4DEA00B16A69 /* TwitterAuthHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterAuthHelper.swift; sourceTree = "<group>"; };
+		F0801E11284E4DEA00B16A69 /* FacebookAuthHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookAuthHelper.swift; sourceTree = "<group>"; };
+		F0801E12284E4DEA00B16A69 /* SocialHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialHelper.swift; sourceTree = "<group>"; };
+		F0801E13284E4DEA00B16A69 /* GoogleAuthHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleAuthHelper.swift; sourceTree = "<group>"; };
+		F0801E14284E4DEA00B16A69 /* SocialAuthHelperProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialAuthHelperProtocols.swift; sourceTree = "<group>"; };
+		F0801E15284E4DEA00B16A69 /* AppleAuthHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleAuthHelper.swift; sourceTree = "<group>"; };
+		F0B1D052284F4DA400100E04 /* AsgaSocialSDKExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsgaSocialSDKExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0B1D054284F4DA400100E04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F0B1D056284F4DA400100E04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F0B1D058284F4DA400100E04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F0B1D05B284F4DA400100E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F0B1D05D284F4DA700100E04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0B1D060284F4DA700100E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F0B1D062284F4DA700100E04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0B1D067284F4DA700100E04 /* AsgaSocialSDKExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsgaSocialSDKExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0B1D06B284F4DA700100E04 /* AsgaSocialSDKExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsgaSocialSDKExampleTests.swift; sourceTree = "<group>"; };
+		F0B1D071284F4DA700100E04 /* AsgaSocialSDKExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsgaSocialSDKExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0B1D075284F4DA700100E04 /* AsgaSocialSDKExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsgaSocialSDKExampleUITests.swift; sourceTree = "<group>"; };
+		F0B1D077284F4DA700100E04 /* AsgaSocialSDKExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsgaSocialSDKExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A17392B9931AEF0C5D3123FF /* Pods_AsgaSocialSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +111,56 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0801DF7284E4CEA00B16A69 /* AsgaSocialSDK.framework in Frameworks */,
+				A14509D1F3E0495EF2004073 /* Pods_AsgaSocialSDK_AsgaSocialSDKTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0B1D04F284F4DA400100E04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0B1D064284F4DA700100E04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0B1D06E284F4DA700100E04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DCD37C51EB3C0B5E7BAFD1C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3F502BF5970E9DE194B0A22 /* Pods-AsgaSocialSDK.debug.xcconfig */,
+				96A821850C2A8C6975899DA0 /* Pods-AsgaSocialSDK.release.xcconfig */,
+				581C7BAC05590DF7ED93EDDD /* Pods-AsgaSocialSDK-AsgaSocialSDKTests.debug.xcconfig */,
+				822A8A00AC5D54AE0EE76D09 /* Pods-AsgaSocialSDK-AsgaSocialSDKTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F0801DE2284E4CEA00B16A69 = {
 			isa = PBXGroup;
 			children = (
 				F0801DEE284E4CEA00B16A69 /* AsgaSocialSDK */,
 				F0801DFA284E4CEA00B16A69 /* AsgaSocialSDKTests */,
+				F0B1D053284F4DA400100E04 /* AsgaSocialSDKExample */,
+				F0B1D06A284F4DA700100E04 /* AsgaSocialSDKExampleTests */,
+				F0B1D074284F4DA700100E04 /* AsgaSocialSDKExampleUITests */,
 				F0801DED284E4CEA00B16A69 /* Products */,
+				DCD37C51EB3C0B5E7BAFD1C7 /* Pods */,
+				F09FB7B9C6B3D447E34BEF65 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +169,9 @@
 			children = (
 				F0801DEC284E4CEA00B16A69 /* AsgaSocialSDK.framework */,
 				F0801DF6284E4CEA00B16A69 /* AsgaSocialSDKTests.xctest */,
+				F0B1D052284F4DA400100E04 /* AsgaSocialSDKExample.app */,
+				F0B1D067284F4DA700100E04 /* AsgaSocialSDKExampleTests.xctest */,
+				F0B1D071284F4DA700100E04 /* AsgaSocialSDKExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +179,7 @@
 		F0801DEE284E4CEA00B16A69 /* AsgaSocialSDK */ = {
 			isa = PBXGroup;
 			children = (
+				F0801E06284E4DEA00B16A69 /* Resources */,
 				F0801DEF284E4CEA00B16A69 /* AsgaSocialSDK.h */,
 				F0801DF0284E4CEA00B16A69 /* AsgaSocialSDK.docc */,
 			);
@@ -83,6 +192,88 @@
 				F0801DFB284E4CEA00B16A69 /* AsgaSocialSDKTests.swift */,
 			);
 			path = AsgaSocialSDKTests;
+			sourceTree = "<group>";
+		};
+		F0801E06284E4DEA00B16A69 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F0801E07284E4DEA00B16A69 /* Models */,
+				F0801E0C284E4DEA00B16A69 /* CredentialHandler */,
+				F0801E0F284E4DEA00B16A69 /* AuthHelper */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F0801E07284E4DEA00B16A69 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F0801E09284E4DEA00B16A69 /* ProviderType.swift */,
+				F0801E0A284E4DEA00B16A69 /* SocialPermissonsType.swift */,
+				F0801E0B284E4DEA00B16A69 /* SocialUserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F0801E0C284E4DEA00B16A69 /* CredentialHandler */ = {
+			isa = PBXGroup;
+			children = (
+				F0801E0D284E4DEA00B16A69 /* SocialGoogleAuthCredential.swift */,
+				F0801E0E284E4DEA00B16A69 /* SocialTwitterAuthCredential.swift */,
+			);
+			path = CredentialHandler;
+			sourceTree = "<group>";
+		};
+		F0801E0F284E4DEA00B16A69 /* AuthHelper */ = {
+			isa = PBXGroup;
+			children = (
+				F0801E12284E4DEA00B16A69 /* SocialHelper.swift */,
+				F0801E14284E4DEA00B16A69 /* SocialAuthHelperProtocols.swift */,
+				F0801E10284E4DEA00B16A69 /* TwitterAuthHelper.swift */,
+				F0801E11284E4DEA00B16A69 /* FacebookAuthHelper.swift */,
+				F0801E13284E4DEA00B16A69 /* GoogleAuthHelper.swift */,
+				F0801E15284E4DEA00B16A69 /* AppleAuthHelper.swift */,
+			);
+			path = AuthHelper;
+			sourceTree = "<group>";
+		};
+		F09FB7B9C6B3D447E34BEF65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B42DDBBEF0B3DD57B8BA7B77 /* Pods_AsgaSocialSDK.framework */,
+				D5EC015B3FB7BE47B2B544B0 /* Pods_AsgaSocialSDK_AsgaSocialSDKTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0B1D053284F4DA400100E04 /* AsgaSocialSDKExample */ = {
+			isa = PBXGroup;
+			children = (
+				F0B1D054284F4DA400100E04 /* AppDelegate.swift */,
+				F0B1D056284F4DA400100E04 /* SceneDelegate.swift */,
+				F0B1D058284F4DA400100E04 /* ViewController.swift */,
+				F0B1D05A284F4DA400100E04 /* Main.storyboard */,
+				F0B1D05D284F4DA700100E04 /* Assets.xcassets */,
+				F0B1D05F284F4DA700100E04 /* LaunchScreen.storyboard */,
+				F0B1D062284F4DA700100E04 /* Info.plist */,
+			);
+			path = AsgaSocialSDKExample;
+			sourceTree = "<group>";
+		};
+		F0B1D06A284F4DA700100E04 /* AsgaSocialSDKExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				F0B1D06B284F4DA700100E04 /* AsgaSocialSDKExampleTests.swift */,
+			);
+			path = AsgaSocialSDKExampleTests;
+			sourceTree = "<group>";
+		};
+		F0B1D074284F4DA700100E04 /* AsgaSocialSDKExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F0B1D075284F4DA700100E04 /* AsgaSocialSDKExampleUITests.swift */,
+				F0B1D077284F4DA700100E04 /* AsgaSocialSDKExampleUITestsLaunchTests.swift */,
+			);
+			path = AsgaSocialSDKExampleUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,6 +294,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0801E00284E4CEA00B16A69 /* Build configuration list for PBXNativeTarget "AsgaSocialSDK" */;
 			buildPhases = (
+				B95D5EB9CBCBBB2B9A864196 /* [CP] Check Pods Manifest.lock */,
 				F0801DE7284E4CEA00B16A69 /* Headers */,
 				F0801DE8284E4CEA00B16A69 /* Sources */,
 				F0801DE9284E4CEA00B16A69 /* Frameworks */,
@@ -121,9 +313,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0801E03284E4CEA00B16A69 /* Build configuration list for PBXNativeTarget "AsgaSocialSDKTests" */;
 			buildPhases = (
+				2966AC167BB625B2F09BB436 /* [CP] Check Pods Manifest.lock */,
 				F0801DF2284E4CEA00B16A69 /* Sources */,
 				F0801DF3284E4CEA00B16A69 /* Frameworks */,
 				F0801DF4284E4CEA00B16A69 /* Resources */,
+				B11224C4B67D28D8A8DF149C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +328,59 @@
 			productName = AsgaSocialSDKTests;
 			productReference = F0801DF6284E4CEA00B16A69 /* AsgaSocialSDKTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F0B1D051284F4DA400100E04 /* AsgaSocialSDKExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0B1D07F284F4DA700100E04 /* Build configuration list for PBXNativeTarget "AsgaSocialSDKExample" */;
+			buildPhases = (
+				F0B1D04E284F4DA400100E04 /* Sources */,
+				F0B1D04F284F4DA400100E04 /* Frameworks */,
+				F0B1D050284F4DA400100E04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AsgaSocialSDKExample;
+			productName = AsgaSocialSDKExample;
+			productReference = F0B1D052284F4DA400100E04 /* AsgaSocialSDKExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F0B1D066284F4DA700100E04 /* AsgaSocialSDKExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0B1D080284F4DA700100E04 /* Build configuration list for PBXNativeTarget "AsgaSocialSDKExampleTests" */;
+			buildPhases = (
+				F0B1D063284F4DA700100E04 /* Sources */,
+				F0B1D064284F4DA700100E04 /* Frameworks */,
+				F0B1D065284F4DA700100E04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0B1D069284F4DA700100E04 /* PBXTargetDependency */,
+			);
+			name = AsgaSocialSDKExampleTests;
+			productName = AsgaSocialSDKExampleTests;
+			productReference = F0B1D067284F4DA700100E04 /* AsgaSocialSDKExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F0B1D070284F4DA700100E04 /* AsgaSocialSDKExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0B1D081284F4DA700100E04 /* Build configuration list for PBXNativeTarget "AsgaSocialSDKExampleUITests" */;
+			buildPhases = (
+				F0B1D06D284F4DA700100E04 /* Sources */,
+				F0B1D06E284F4DA700100E04 /* Frameworks */,
+				F0B1D06F284F4DA700100E04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0B1D073284F4DA700100E04 /* PBXTargetDependency */,
+			);
+			name = AsgaSocialSDKExampleUITests;
+			productName = AsgaSocialSDKExampleUITests;
+			productReference = F0B1D071284F4DA700100E04 /* AsgaSocialSDKExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -150,6 +397,17 @@
 					};
 					F0801DF5284E4CEA00B16A69 = {
 						CreatedOnToolsVersion = 13.0;
+					};
+					F0B1D051284F4DA400100E04 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					F0B1D066284F4DA700100E04 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = F0B1D051284F4DA400100E04;
+					};
+					F0B1D070284F4DA700100E04 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = F0B1D051284F4DA400100E04;
 					};
 				};
 			};
@@ -168,6 +426,9 @@
 			targets = (
 				F0801DEB284E4CEA00B16A69 /* AsgaSocialSDK */,
 				F0801DF5284E4CEA00B16A69 /* AsgaSocialSDKTests */,
+				F0B1D051284F4DA400100E04 /* AsgaSocialSDKExample */,
+				F0B1D066284F4DA700100E04 /* AsgaSocialSDKExampleTests */,
+				F0B1D070284F4DA700100E04 /* AsgaSocialSDKExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -187,13 +448,112 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F0B1D050284F4DA400100E04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0B1D061284F4DA700100E04 /* LaunchScreen.storyboard in Resources */,
+				F0B1D05E284F4DA700100E04 /* Assets.xcassets in Resources */,
+				F0B1D05C284F4DA400100E04 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0B1D065284F4DA700100E04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0B1D06F284F4DA700100E04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2966AC167BB625B2F09BB436 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AsgaSocialSDK-AsgaSocialSDKTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B11224C4B67D28D8A8DF149C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AsgaSocialSDK-AsgaSocialSDKTests/Pods-AsgaSocialSDK-AsgaSocialSDKTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AsgaSocialSDK-AsgaSocialSDKTests/Pods-AsgaSocialSDK-AsgaSocialSDKTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AsgaSocialSDK-AsgaSocialSDKTests/Pods-AsgaSocialSDK-AsgaSocialSDKTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B95D5EB9CBCBBB2B9A864196 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AsgaSocialSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F0801DE8284E4CEA00B16A69 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0801E20284E4DEB00B16A69 /* SocialAuthHelperProtocols.swift in Sources */,
+				F0801E1A284E4DEB00B16A69 /* SocialGoogleAuthCredential.swift in Sources */,
+				F0801E18284E4DEB00B16A69 /* SocialPermissonsType.swift in Sources */,
+				F0801E1E284E4DEB00B16A69 /* SocialHelper.swift in Sources */,
+				F0801E21284E4DEB00B16A69 /* AppleAuthHelper.swift in Sources */,
+				F0801E19284E4DEB00B16A69 /* SocialUserModel.swift in Sources */,
+				F0801E1C284E4DEB00B16A69 /* TwitterAuthHelper.swift in Sources */,
+				F0801E1B284E4DEB00B16A69 /* SocialTwitterAuthCredential.swift in Sources */,
+				F0801E1D284E4DEB00B16A69 /* FacebookAuthHelper.swift in Sources */,
+				F0801E17284E4DEB00B16A69 /* ProviderType.swift in Sources */,
+				F0801E1F284E4DEB00B16A69 /* GoogleAuthHelper.swift in Sources */,
 				F0801DF1284E4CEA00B16A69 /* AsgaSocialSDK.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +566,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F0B1D04E284F4DA400100E04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0B1D059284F4DA400100E04 /* ViewController.swift in Sources */,
+				F0B1D055284F4DA400100E04 /* AppDelegate.swift in Sources */,
+				F0B1D057284F4DA400100E04 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0B1D063284F4DA700100E04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0B1D06C284F4DA700100E04 /* AsgaSocialSDKExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0B1D06D284F4DA700100E04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0B1D076284F4DA700100E04 /* AsgaSocialSDKExampleUITests.swift in Sources */,
+				F0B1D078284F4DA700100E04 /* AsgaSocialSDKExampleUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -214,7 +601,36 @@
 			target = F0801DEB284E4CEA00B16A69 /* AsgaSocialSDK */;
 			targetProxy = F0801DF8284E4CEA00B16A69 /* PBXContainerItemProxy */;
 		};
+		F0B1D069284F4DA700100E04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0B1D051284F4DA400100E04 /* AsgaSocialSDKExample */;
+			targetProxy = F0B1D068284F4DA700100E04 /* PBXContainerItemProxy */;
+		};
+		F0B1D073284F4DA700100E04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0B1D051284F4DA400100E04 /* AsgaSocialSDKExample */;
+			targetProxy = F0B1D072284F4DA700100E04 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F0B1D05A284F4DA400100E04 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0B1D05B284F4DA400100E04 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F0B1D05F284F4DA700100E04 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0B1D060284F4DA700100E04 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F0801DFE284E4CEA00B16A69 /* Debug */ = {
@@ -269,7 +685,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -327,7 +743,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -341,6 +757,7 @@
 		};
 		F0801E01284E4CEA00B16A69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3F502BF5970E9DE194B0A22 /* Pods-AsgaSocialSDK.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -361,6 +778,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.AsgaSocialSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -369,6 +787,7 @@
 		};
 		F0801E02284E4CEA00B16A69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96A821850C2A8C6975899DA0 /* Pods-AsgaSocialSDK.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -389,6 +808,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.AsgaSocialSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -397,7 +817,9 @@
 		};
 		F0801E04284E4CEA00B16A69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 581C7BAC05590DF7ED93EDDD /* Pods-AsgaSocialSDK-AsgaSocialSDKTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9QN42M9M26;
@@ -418,7 +840,9 @@
 		};
 		F0801E05284E4CEA00B16A69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 822A8A00AC5D54AE0EE76D09 /* Pods-AsgaSocialSDK-AsgaSocialSDKTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9QN42M9M26;
@@ -434,6 +858,158 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F0B1D079284F4DA700100E04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9QN42M9M26;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AsgaSocialSDKExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AsgaSocialSDKExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F0B1D07A284F4DA700100E04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9QN42M9M26;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AsgaSocialSDKExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AsgaSocialSDKExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F0B1D07B284F4DA700100E04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9QN42M9M26;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AsgaSocialSDKExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AsgaSocialSDKExample.app/AsgaSocialSDKExample";
+			};
+			name = Debug;
+		};
+		F0B1D07C284F4DA700100E04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9QN42M9M26;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AsgaSocialSDKExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AsgaSocialSDKExample.app/AsgaSocialSDKExample";
+			};
+			name = Release;
+		};
+		F0B1D07D284F4DA700100E04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9QN42M9M26;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AsgaSocialSDKExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AsgaSocialSDKExample;
+			};
+			name = Debug;
+		};
+		F0B1D07E284F4DA700100E04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9QN42M9M26;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AsgaSocialSDKExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AsgaSocialSDKExample;
 			};
 			name = Release;
 		};
@@ -463,6 +1039,33 @@
 			buildConfigurations = (
 				F0801E04284E4CEA00B16A69 /* Debug */,
 				F0801E05284E4CEA00B16A69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0B1D07F284F4DA700100E04 /* Build configuration list for PBXNativeTarget "AsgaSocialSDKExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0B1D079284F4DA700100E04 /* Debug */,
+				F0B1D07A284F4DA700100E04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0B1D080284F4DA700100E04 /* Build configuration list for PBXNativeTarget "AsgaSocialSDKExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0B1D07B284F4DA700100E04 /* Debug */,
+				F0B1D07C284F4DA700100E04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0B1D081284F4DA700100E04 /* Build configuration list for PBXNativeTarget "AsgaSocialSDKExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0B1D07D284F4DA700100E04 /* Debug */,
+				F0B1D07E284F4DA700100E04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

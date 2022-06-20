@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     //MARK: Social Button Actions
     @IBAction func appleTapAction(_ sender: Any) {
         if #available(iOS 13.0, *) {
-            appleAuthHelper.launchLoginWithSocial()
+            appleAuthHelper.launchAppleLogin()
         } else {
             appleButton.isHidden = true
         }

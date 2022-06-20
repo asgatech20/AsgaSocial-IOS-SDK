@@ -15,13 +15,10 @@ pod "AsgaSocialSDK"
 # Usage
 
 ```swift
+// initialize var from SocialHelper class for login with Google, Facebook and Twitter
 var socialAuthHelper = SocialHelper.init(viewController: self,
                                          Permissions: [.publicProfile,
                                                       .email])
-
-// to implement login with Apple
-socialAuthHelper.launchAppleLogin()
-
 // to implement login with Google
 socialAuthHelper.launchGoogleLogin()
 
@@ -30,7 +27,11 @@ socialAuthHelper.launchFacebookLogin()
 
 // to implement login with Twitter
 socialAuthHelper.launchTwitterLogin()
-                               
+
+// For Apple Login Implementation                                
+var appleAuthHelper = AppleAuthenticationHelper(vc: self,
+                                                permissions: permissions)
+appleAuthHelper.launchAppleLogin()
 ```      
 # Configurations
 

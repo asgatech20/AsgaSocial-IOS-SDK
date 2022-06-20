@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "AsgaSocialSDK"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "AsgaSocialSDK is a social media login"
 
   spec.description  = <<-DESC
@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.ios.deployment_target = "11.0"
 
-  spec.source       = { :git => "https://github.com/asgatech20/AsgaSocial-IOS-SDK.git", :tag => "0.0.2" }
+  spec.source       = { :git => "https://github.com/asgatech20/AsgaSocial-IOS-SDK.git", :tag => "1.0.3" }
 
   spec.source_files  = "AsgaSocialSDK/**/*.{h,m,swift}"
   spec.exclude_files = "Classes/Exclude"

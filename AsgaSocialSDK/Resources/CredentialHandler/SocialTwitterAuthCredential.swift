@@ -9,12 +9,13 @@ import Foundation
 
 //MARK: Twitter Credential Constants
 /// Credentials That needed when login with Twitter, it's variables should be set it's value in app delegate
-class SocialTwitterAuthCredential {
+public class SocialTwitterAuthCredential {
     //MARK: Variables
-    var twitterConsumerKey = ""
-    var twitterConsumerSecret = ""
-    var twitterAuthCallBackUrl = ""
-    static var shared: SocialTwitterAuthCredential = {
+    public var twitterConsumerKey = ""
+    public var twitterConsumerSecret = ""
+    public var twitterAuthCallBackUrl = ""
+    
+    public static var shared: SocialTwitterAuthCredential = {
         let instance = SocialTwitterAuthCredential()
         return instance
     }()

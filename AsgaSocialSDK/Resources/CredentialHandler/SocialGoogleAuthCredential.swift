@@ -9,13 +9,13 @@ import Foundation
 
 //MARK: Google Credential Constants
 /// Credentials That needed when login with Google
-class SocialGoogleAuthCredential {
+public class SocialGoogleAuthCredential {
     //MARK: Variables
     
     /// Id needed to enable login with google, it should be set it's value in app delegate
-    var googleClientID = ""
+    public var googleClientID = ""
 
-    static var shared: SocialGoogleAuthCredential = {
+    public static var shared: SocialGoogleAuthCredential = {
         let instance = SocialGoogleAuthCredential()
         return instance
     }()

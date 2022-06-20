@@ -22,10 +22,13 @@ public class GoogleAuthHelper: SocialAuthHelper {
         GIDSignIn.sharedInstance.signOut()
     }
     
+    /// handle logging with google requests to get user account information
     public func launchLoginWithSocial() {
         let configurations = GIDConfiguration(clientID: SocialGoogleAuthCredential.shared.googleClientID, serverClientID: nil, hostedDomain: nil, openIDRealm: nil)
 
+        // first logout from any previous account to enabling login with any other account
         logoutFromSocialAccount()
+        
         GIDSignIn.sharedInstance.signIn(with: configurations, presenting: viewController, hint: nil) { [weak viewController] googleUser, error in
            
             if let error = error {
@@ -38,6 +41,7 @@ public class GoogleAuthHelper: SocialAuthHelper {
         }
     }
     
+    /// parse result of requesting user account informations in success case
     private func handleResponse(withUser user: GIDGoogleUser, id: String) {
         let fullName = user.profile?.name ?? ""
         let firstName = user.profile?.givenName ?? ""

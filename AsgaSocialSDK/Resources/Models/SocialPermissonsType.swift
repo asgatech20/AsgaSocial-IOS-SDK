@@ -31,7 +31,11 @@ extension SocialPermissionsType {
         case .facebook:
             return handleFacebookPermissions(items)
         case .apple:
-            return handleApplePermissions(items)
+            if #available(iOS 13.0, *) {
+                return handleApplePermissions(items)
+            } else {
+                return []
+            }
         default:
             return []
         }
@@ -55,6 +59,7 @@ extension SocialPermissionsType {
      - Returns:
          array of ASAuthorization.Scope which mean The kinds of contact information that can be requested from the user.
      */
+    @available(iOS 13.0, *)
     private static func handleApplePermissions(_ items: [SocialPermissionsType]) -> [ASAuthorization.Scope] {
         items.compactMap({$0.applePermissionsParser})
     }
@@ -66,6 +71,7 @@ extension SocialPermissionsType {
     /**
        computed property which return the equivalent of SocialPermissionsType with ASAuthorization.Scope type
     */
+    @available(iOS 13.0, *)
     var applePermissionsParser: ASAuthorization.Scope {
         switch self {
         case .email:

@@ -13,22 +13,28 @@ class ViewController: UIViewController {
     @IBOutlet weak var appleButton: UIButton!
     
     //MARK: Variables
+    lazy var permissions: [SocialPermissionsType] = [.publicProfile,
+                                                   .email]
     lazy var socialAuthHelper = SocialHelper.init(
                                             viewController: self,
-                                            Permissions: [.publicProfile,
-                                                          .email])
+                                            permissions: permissions)
+    @available(iOS 13.0, *)
+    lazy var appleAuthHelper = AppleAuthenticationHelper(vc: self, permissions: permissions)
     
+    //MARK: Inner Function
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
+    //MARK: Social Button Actions
     @IBAction func appleTapAction(_ sender: Any) {
         if #available(iOS 13.0, *) {
-            socialAuthHelper.launchAppleLogin()
+            appleAuthHelper.launchLoginWithSocial()
         } else {
             appleButton.isHidden = true
         }
     }
+    
     @IBAction func facebookTapAction(_ sender: Any) {
         socialAuthHelper.launchFacebookLogin()
     }

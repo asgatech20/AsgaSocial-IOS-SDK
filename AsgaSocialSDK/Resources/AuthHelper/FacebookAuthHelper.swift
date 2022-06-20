@@ -33,12 +33,17 @@ class FacebookAuthHelper: SocialAuthHelper {
     
     /// handle requests to facebook SDK to login.
     func launchLoginWithSocial() {
+        // first logout from any previous account to enabling login with any other account
         logoutFromSocialAccount()
 
         faceBookLoginManager.logIn(permissions: permissions, from: viewController) { [weak viewController] (result, error) in
 
             guard let token = result?.token else {
-                viewController?.didFailWith(error: error?.localizedDescription)
+            #if DEBUG
+                viewController?.didFailWith(error: error?.localizedDescription ?? "Check if Login with facebook is in Development Mode, if it's in development mode you need to make it live or add test users.")
+            #else
+                viewController?.didFailWith(error: error?.localizedDescription ?? "something went wrong, pls try again later")
+            #endif
                 return
             }
 
@@ -48,6 +53,7 @@ class FacebookAuthHelper: SocialAuthHelper {
         }
     }
     
+    /// request parameters regard to permissions requested
     private func requestParameters(ofToken token: AccessToken,
                                    grantedPermissions: [SocialPermissionsType],
                                    declinedPermissions: [SocialPermissionsType]) {
@@ -62,6 +68,7 @@ class FacebookAuthHelper: SocialAuthHelper {
         }
     }
     
+    /// handle graph request object that responsible for requesting user account informations
     private func getGraphRequest(ofToken token: String) -> GraphRequest {
         GraphRequest(
             graphPath: "me",
@@ -72,6 +79,7 @@ class FacebookAuthHelper: SocialAuthHelper {
         )
     }
     
+    /// handle result of requesting user account informations in success and failure
     private func handleResult(_ result: Any?,
                               grantedPermissions: [SocialPermissionsType],
                               declinedPermissions: [SocialPermissionsType]) {

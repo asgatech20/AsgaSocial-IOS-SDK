@@ -62,7 +62,7 @@ public class SocialHelper {
      responsible for login with facebook, request the permissions that set while initializing then request user account information from SDK
      */
     public func launchAppleLogin() {
-        let appleAuthHelper: SocialAuthHelper = AppleAuthHelper(viewController: viewController, permissions: permissions)
-        appleAuthHelper.launchLoginWithSocial()
+//        let appleAuthHelper: SocialAuthHelper = AppleAuthHelper(viewController: viewController, permissions: permissions)
+//        appleAuthHelper.launchLoginWithSocial()
     }
 }

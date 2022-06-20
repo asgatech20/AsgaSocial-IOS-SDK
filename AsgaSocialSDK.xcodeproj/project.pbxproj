@@ -23,9 +23,8 @@
 		F0801E1E284E4DEB00B16A69 /* SocialHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0801E12284E4DEA00B16A69 /* SocialHelper.swift */; };
 		F0801E1F284E4DEB00B16A69 /* GoogleAuthHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0801E13284E4DEA00B16A69 /* GoogleAuthHelper.swift */; };
 		F0801E20284E4DEB00B16A69 /* SocialAuthHelperProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0801E14284E4DEA00B16A69 /* SocialAuthHelperProtocols.swift */; };
-		F0801E21284E4DEB00B16A69 /* AppleAuthHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0801E15284E4DEA00B16A69 /* AppleAuthHelper.swift */; };
+		F08EBE522860823F00F34E59 /* AppleAuthenticationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08EBE512860823E00F34E59 /* AppleAuthenticationHelper.swift */; };
 		F0B1D055284F4DA400100E04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1D054284F4DA400100E04 /* AppDelegate.swift */; };
-		F0B1D057284F4DA400100E04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1D056284F4DA400100E04 /* SceneDelegate.swift */; };
 		F0B1D059284F4DA400100E04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1D058284F4DA400100E04 /* ViewController.swift */; };
 		F0B1D05C284F4DA400100E04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0B1D05A284F4DA400100E04 /* Main.storyboard */; };
 		F0B1D05E284F4DA700100E04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0B1D05D284F4DA700100E04 /* Assets.xcassets */; };
@@ -81,10 +80,9 @@
 		F0801E12284E4DEA00B16A69 /* SocialHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialHelper.swift; sourceTree = "<group>"; };
 		F0801E13284E4DEA00B16A69 /* GoogleAuthHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleAuthHelper.swift; sourceTree = "<group>"; };
 		F0801E14284E4DEA00B16A69 /* SocialAuthHelperProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialAuthHelperProtocols.swift; sourceTree = "<group>"; };
-		F0801E15284E4DEA00B16A69 /* AppleAuthHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleAuthHelper.swift; sourceTree = "<group>"; };
+		F08EBE512860823E00F34E59 /* AppleAuthenticationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleAuthenticationHelper.swift; sourceTree = "<group>"; };
 		F0B1D052284F4DA400100E04 /* AsgaSocialSDKExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsgaSocialSDKExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0B1D054284F4DA400100E04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F0B1D056284F4DA400100E04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F0B1D058284F4DA400100E04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F0B1D05B284F4DA400100E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0B1D05D284F4DA700100E04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -226,12 +224,12 @@
 		F0801E0F284E4DEA00B16A69 /* AuthHelper */ = {
 			isa = PBXGroup;
 			children = (
+				F08EBE512860823E00F34E59 /* AppleAuthenticationHelper.swift */,
 				F0801E12284E4DEA00B16A69 /* SocialHelper.swift */,
 				F0801E14284E4DEA00B16A69 /* SocialAuthHelperProtocols.swift */,
-				F0801E10284E4DEA00B16A69 /* TwitterAuthHelper.swift */,
 				F0801E11284E4DEA00B16A69 /* FacebookAuthHelper.swift */,
 				F0801E13284E4DEA00B16A69 /* GoogleAuthHelper.swift */,
-				F0801E15284E4DEA00B16A69 /* AppleAuthHelper.swift */,
+				F0801E10284E4DEA00B16A69 /* TwitterAuthHelper.swift */,
 			);
 			path = AuthHelper;
 			sourceTree = "<group>";
@@ -249,7 +247,6 @@
 			isa = PBXGroup;
 			children = (
 				F0B1D054284F4DA400100E04 /* AppDelegate.swift */,
-				F0B1D056284F4DA400100E04 /* SceneDelegate.swift */,
 				F0B1D058284F4DA400100E04 /* ViewController.swift */,
 				F0B1D05A284F4DA400100E04 /* Main.storyboard */,
 				F0B1D05D284F4DA700100E04 /* Assets.xcassets */,
@@ -547,7 +544,7 @@
 				F0801E1A284E4DEB00B16A69 /* SocialGoogleAuthCredential.swift in Sources */,
 				F0801E18284E4DEB00B16A69 /* SocialPermissonsType.swift in Sources */,
 				F0801E1E284E4DEB00B16A69 /* SocialHelper.swift in Sources */,
-				F0801E21284E4DEB00B16A69 /* AppleAuthHelper.swift in Sources */,
+				F08EBE522860823F00F34E59 /* AppleAuthenticationHelper.swift in Sources */,
 				F0801E19284E4DEB00B16A69 /* SocialUserModel.swift in Sources */,
 				F0801E1C284E4DEB00B16A69 /* TwitterAuthHelper.swift in Sources */,
 				F0801E1B284E4DEB00B16A69 /* SocialTwitterAuthCredential.swift in Sources */,
@@ -572,7 +569,6 @@
 			files = (
 				F0B1D059284F4DA400100E04 /* ViewController.swift in Sources */,
 				F0B1D055284F4DA400100E04 /* AppDelegate.swift in Sources */,
-				F0B1D057284F4DA400100E04 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -774,7 +770,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AsgaSocialSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -804,7 +800,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AsgaSocialSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

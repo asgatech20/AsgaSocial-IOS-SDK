@@ -1,7 +1,6 @@
 # AsgaSocialSDK
-     AsgaSocialSDK is an iOS Library which used to facilitate the login 
-     with different social ways in your app, until now you can login with
-     apple, google, facebook and twitter.
+AsgaSocialSDK is an iOS Library which used to facilitate the login with different social  
+ways in your app, until now you can login with apple, google, facebook and twitter.
 
 ## Installation
 
@@ -34,10 +33,9 @@ var appleAuthHelper = AppleAuthenticationHelper(vc: self,
 appleAuthHelper.launchAppleLogin()
 ```      
 # Configurations
+for login with Google or Twitter Set this variables in AppDelegate.swift file:
 
 ```swift
-// in AppDelegate.swift file 
-
 // in case login with Google, set the googleClientID
 SocialGoogleAuthCredential.shared.googleClientID = "googleClientID"
 

@@ -8,6 +8,7 @@
 import UIKit
 import AsgaSocialSDK
 
+@available(iOS 13.0, *)
 class ViewController: UIViewController {
     //MARK: Outlets
     @IBOutlet weak var appleButton: UIButton!
@@ -18,7 +19,7 @@ class ViewController: UIViewController {
     lazy var socialAuthHelper = SocialHelper.init(
                                             viewController: self,
                                             permissions: permissions)
-    @available(iOS 13.0, *)
+
     lazy var appleAuthHelper = AppleAuthenticationHelper(vc: self, permissions: permissions)
     
     //MARK: Inner Function
@@ -49,6 +50,7 @@ class ViewController: UIViewController {
 }
 
 // MARK: SocialAuth Delegate
+@available(iOS 13.0, *)
 extension ViewController: SocialAuthDelegate {
     func didAuthenticated(result: SocialUserModel,
                           grantedPermissions: [SocialPermissionsType]?,

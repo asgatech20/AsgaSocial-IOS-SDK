@@ -9,13 +9,14 @@ import Foundation
 
 /// User Contact Information that returned from login with Social
 public struct SocialUserModel {
-    var providerId = ""
-    var fullName = ""
-    var fName = ""
-    var lName = ""
-    var image = ""
-    var email = ""
-    var gender = ""
-    var birthdate = ""
-    var phone = ""
+    public var providerId = ""
+    public var fullName = ""
+    public var fName = ""
+    public var lName = ""
+    public var image = ""
+    public var email = ""
+    public var gender = ""
+    public var birthdate = ""
+    public var phone = ""
+    public var providerType: ProviderType = .google
 }

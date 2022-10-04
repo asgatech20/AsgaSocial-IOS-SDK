@@ -60,7 +60,8 @@ extension AppleAuthenticationHelper:
                                     fName: fullName?.givenName ?? "",
                                     lName: fullName?.familyName ?? "",
                                     image: "",
-                                    email: email ?? "")
+                                    email: email ?? "",
+                                    providerType: .apple)
         viewController?.didAuthenticated(result: model)
     }
     

@@ -1,0 +1,6 @@
+framework module Pods_AsgaSocialSDK {
+  umbrella header "Pods-AsgaSocialSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

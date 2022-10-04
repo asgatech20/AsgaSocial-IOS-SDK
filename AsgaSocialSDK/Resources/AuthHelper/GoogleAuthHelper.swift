@@ -54,7 +54,8 @@ public class GoogleAuthHelper: SocialAuthHelper {
                                     fName: firstName,
                                     lName: lastName,
                                     image: image,
-                                    email: email)
+                                    email: email,
+                                    providerType: .google)
         viewController.didAuthenticated(result: model)
     }
 }

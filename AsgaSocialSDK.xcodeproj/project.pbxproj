@@ -64,6 +64,7 @@
 		96A821850C2A8C6975899DA0 /* Pods-AsgaSocialSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsgaSocialSDK.release.xcconfig"; path = "Target Support Files/Pods-AsgaSocialSDK/Pods-AsgaSocialSDK.release.xcconfig"; sourceTree = "<group>"; };
 		B42DDBBEF0B3DD57B8BA7B77 /* Pods_AsgaSocialSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AsgaSocialSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F502BF5970E9DE194B0A22 /* Pods-AsgaSocialSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsgaSocialSDK.debug.xcconfig"; path = "Target Support Files/Pods-AsgaSocialSDK/Pods-AsgaSocialSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		CD903F4A28EC665500DE227F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5EC015B3FB7BE47B2B544B0 /* Pods_AsgaSocialSDK_AsgaSocialSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AsgaSocialSDK_AsgaSocialSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0801DEC284E4CEA00B16A69 /* AsgaSocialSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AsgaSocialSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0801DEF284E4CEA00B16A69 /* AsgaSocialSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsgaSocialSDK.h; sourceTree = "<group>"; };
@@ -87,7 +88,6 @@
 		F0B1D05B284F4DA400100E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0B1D05D284F4DA700100E04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0B1D060284F4DA700100E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F0B1D062284F4DA700100E04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0B1D067284F4DA700100E04 /* AsgaSocialSDKExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsgaSocialSDKExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0B1D06B284F4DA700100E04 /* AsgaSocialSDKExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsgaSocialSDKExampleTests.swift; sourceTree = "<group>"; };
 		F0B1D071284F4DA700100E04 /* AsgaSocialSDKExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsgaSocialSDKExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -251,7 +251,7 @@
 				F0B1D05A284F4DA400100E04 /* Main.storyboard */,
 				F0B1D05D284F4DA700100E04 /* Assets.xcassets */,
 				F0B1D05F284F4DA700100E04 /* LaunchScreen.storyboard */,
-				F0B1D062284F4DA700100E04 /* Info.plist */,
+				CD903F4A28EC665500DE227F /* Info.plist */,
 			);
 			path = AsgaSocialSDKExample;
 			sourceTree = "<group>";

@@ -105,7 +105,8 @@ class FacebookAuthHelper: SocialAuthHelper {
             image: image,
             email: email,
             gender: gender,
-            birthdate: birthday
+            birthdate: birthday,
+            providerType: .facebook
         )
         viewController.didAuthenticated(result: model, grantedPermissions: grantedPermissions, declinedPermissions: declinedPermissions)
     }

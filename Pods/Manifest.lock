@@ -34,7 +34,6 @@ PODS:
 DEPENDENCIES:
   - FacebookCore
   - FacebookLogin
-  - FBSDKLoginKit
   - GoogleSignIn
   - Swifter (from `https://github.com/mattdonnelly/Swifter.git`)
 
@@ -69,6 +68,6 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: ffbb25ec00ebcb5201adab0a56d808f6f1902d9f
   Swifter: 4c2f8cf320c2f751c10128f841d8e9bd8609d988
 
-PODFILE CHECKSUM: 8090c39cba83a6958284fe399fc6b309177dabf4
+PODFILE CHECKSUM: bf562b6892c20df06174373ee55412fdf81d324b
 
 COCOAPODS: 1.11.3

@@ -6,7 +6,8 @@
 //
 
 import Foundation
-import FBSDKLoginKit
+import FacebookLogin
+import FacebookCore
 
 class FacebookAuthHelper: SocialAuthHelper {
     //MARK: Variables

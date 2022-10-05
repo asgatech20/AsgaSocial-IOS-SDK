@@ -6,7 +6,9 @@ target 'AsgaSocialSDK' do
   use_frameworks!
 
   pod 'GoogleSignIn'
-  pod 'FBSDKLoginKit'
+#  pod 'FBSDKLoginKit'
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
   pod 'Swifter' , :git => 'https://github.com/mattdonnelly/Swifter.git'
 
   target 'AsgaSocialSDKTests' do

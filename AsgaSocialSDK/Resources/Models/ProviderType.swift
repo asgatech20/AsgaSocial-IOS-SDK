@@ -8,9 +8,9 @@
 import Foundation
 
 /// The Types of different social login Available 
-public enum ProviderType {
-    case google
-    case apple
-    case twitter
-    case facebook
+public enum ProviderType: String {
+    case google = "google"
+    case apple = "apple"
+    case twitter = "twitter"
+    case facebook = "facebook"
 }

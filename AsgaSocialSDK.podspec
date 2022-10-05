@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "AsgaSocialSDK"
-  spec.version      = "1.0.8"
+  spec.version      = "1.0.9"
   spec.summary      = "AsgaSocialSDK is a social media login"
 
   spec.description  = <<-DESC
